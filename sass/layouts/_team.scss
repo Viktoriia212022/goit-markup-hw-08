@@ -1,18 +1,19 @@
 .team {
   background-color: var(--primary-bg-color);
  &__list {
-  
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   @media screen and (min-width: 768px) {
-      width: calc((100% - 30px) / 2);
-    }
+      width: ((100% - 30px) / 2);
+      }
  }
  &__title {
    margin-bottom: 50px;
  }
 }
+
+
 .card__name {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -23,6 +24,7 @@
   // margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  
   
   &__text {
       font-size: 16px;

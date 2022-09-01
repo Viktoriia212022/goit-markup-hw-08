@@ -222,6 +222,11 @@ img {
   justify-content: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .quality {
+    width: calc((100% - 30px) / 2);
+  }
+}
 
 .quality__title {
   font-weight: 700;
@@ -283,14 +288,13 @@ h2 {
   background-color: var(--primary-bg-color);
 }
 .team__list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__list {
-    width: 768px;
+    width: calc((100% - 30px) / 2);
   }
 }
 .team__title {
