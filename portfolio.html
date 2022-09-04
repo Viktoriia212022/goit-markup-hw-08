@@ -19,7 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -64,11 +63,11 @@
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="button-f--flex">
-            <li><button class="button-f" type="button">Все</button></li>
-            <li><button class="button-f" type="button">Веб-сайти</button></li>
-            <li><button class="button-f" type="button">Додатки</button></li>
-            <li><button class="button-f" type="button">Дизайн</button></li>
-            <li><button class="button-f" type="button">Маркетинг</button></li>
+            <li button-b--one><button class="button-f" type="button">Все</button></li>
+            <li button-b--one><button class="button-f" type="button">Веб-сайти</button></li>
+            <li button-b--one><button class="button-f" type="button">Додатки</button></li>
+            <li button-b--one><button class="button-f" type="button">Дизайн</button></li>
+            <li button-b--one><button class="button-f" type="button">Маркетинг</button></li>
           </ul>
 
           <ul class="foto">
@@ -223,56 +222,58 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="container footer--flex">
+      <div class="footer--flex container">
         <!-- Скритий заголовок -->
         <h2 class="visually-hidden">Контакти</h2>
-        <div class="footer__addres">
-          <a href="./index.html" class="logo"
-            ><span class="logo__text">Web</span><span class="logo__text--white">Studio</span></a
-          >
-          <address>
-            <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer__contact">
-              <li><a href="mailto:info@devstudio.com" class="madia">info@devstudio.com</a></li>
-              <li class="madia--position">
-                <a href="tel:+380961111111" class="madia">+38 096 111 11 11</a>
+        <div class="footer--trio">
+          <div class="footer__addres">
+            <a href="./index.html" class="logo"
+              ><span class="logo__text">Web</span><span class="logo__text--white">Studio</span></a
+            >
+            <address>
+              <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="footer__contact">
+                <li><a href="mailto:info@devstudio.com" class="madia">info@devstudio.com</a></li>
+                <li class="madia--position">
+                  <a href="tel:+380961111111" class="madia">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__social">
+            <p class="footer__text footer__text--position">Приєднуйтесь</p>
+            <ul class="network list">
+              <li>
+                <a href="" class="network__link">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="network__link">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="network__link">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="network__link">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer__social">
-          <p class="footer__text footer__text--position">Приєднуйтесь</p>
-          <ul class="network list">
-            <li>
-              <a href="" class="network__link">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="network__link">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="network__link">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="network__link">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="footer__letter">
@@ -285,10 +286,12 @@
               placeholder="E-mail"
             />
             <div class="footer__letter-bt">
-              <button type="submit" class="button send-letter">Підписатися</button>
-              <svg class="footer__letter-icon" width="24" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
+              <button type="submit" class="button send-letter">
+                Підписатися
+                <svg class="footer__letter-icon" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>

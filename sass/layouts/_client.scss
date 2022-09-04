@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+   
+   
 }
 
 .client__title {
@@ -24,6 +26,14 @@
         color: var(--accent-color);
         border: 1px solid #2196f3;
     }
+
+     @media screen and (min-width: 768px) {
+     width: 226px;
+}
+    @media screen and (min-width: 1200px) {
+    width: 170px;
+}
+
 }
 
 .client__icon {
@@ -34,5 +44,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+     width: calc((100% - 60px)/3);
 }
+    @media screen and (min-width: 1200px) {
+     width: calc((100% - 150px)/6);
+     }
+}
+
+
 
