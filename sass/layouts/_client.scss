@@ -2,12 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-   
+@media screen and (max-width: 480px) {
+        align-items: center;
+        justify-content: center;
+    }
    
 }
 
 .client__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
 }
 
 .client__link {

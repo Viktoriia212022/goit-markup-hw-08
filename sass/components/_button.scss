@@ -26,6 +26,7 @@
 
 .button-f {
   @extend .button;
+  box-shadow: none;
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
   font-weight: 500;
@@ -42,7 +43,7 @@
 }
 
 .button-f--flex {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
    gap: 15px 8px;
@@ -51,10 +52,14 @@
   // justify-content: center;
   // gap: 10px;
   @media screen and (min-width: 768px) {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         gap: 10px;
+    }
+  @media screen and (min-width: 1200px) {
+        margin-bottom: 35px;
+        
     }
   
     

@@ -1,6 +1,6 @@
 .hero {
     background-color: #c4c4c4;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
     padding-top: 120px;
     max-width: 100%;
     margin: 0 auto;
@@ -28,6 +28,9 @@
     @media screen and (min-width: 1200px) {
     background-image: var(--bg-gradient),
         url(../images/hero-desktop.jpg);
+    padding-bottom: 280px;
+    padding-top: 200px;
+    height: 600px;
      @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -49,5 +52,12 @@
     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
+@media screen and (min-width: 1200px){
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 700px;
+        
+            
+    }
 
 }
