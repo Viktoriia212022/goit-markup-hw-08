@@ -11,8 +11,10 @@
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 320px;
+  min-height: 609px;
+  // width: 528px;
+  // min-height: 581px;
   background-color: var(--title-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -48,10 +50,13 @@
 &__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+       line-height: 1.15;
+    }
 }
 &-icon {
   position: absolute;
@@ -64,6 +69,13 @@
     fill: var(--accent-color);
   }
 }
+@media screen and (min-width: 450px) {
+    width: 450px;
+     }
+@media screen and (min-width: 1200px) {
+   width: 528px;
+   height: 581px;
+  }
 }
 
 .is-hidden {
@@ -133,8 +145,9 @@
 }
 
 .mark-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,6 +163,11 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+@media screen and (min-width: 1200px) {
+     font-size: 12px;
+      line-height: 1.71;
+     }
+      
 }
 
 

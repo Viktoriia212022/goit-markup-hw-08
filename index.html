@@ -30,6 +30,11 @@
           <a href="./index.html" class="logo header-logo--position">
             Web<span class="logo__text--black">Studio</span></a
           >
+          <button type="button" class="menu-btn-open" data-menu-open>
+            <svg width="40" height="40" aria-label="переключатель мобільного меню">
+              <use href="./images/svg/symbol-defs.svg#icon-burger-open"></use>
+            </svg>
+          </button>
           <ul class="nav">
             <li><a href="./index.html" class="nav__link current">Студія</a></li>
             <li><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -39,7 +44,7 @@
         <ul class="header__contacts">
           <li class="mail">
             <a href="mailto:info@devstudio.com" class="mail__item">
-              <svg class="mail__icon" width="16" height="12">
+              <svg class="mail__icon" width="14" height="10">
                 <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -47,45 +52,50 @@
           </li>
           <li class="tel">
             <a href="tel:+380961111111" class="tel__item">
-              <svg class="tel__icon" width="10" height="16">
+              <svg class="tel__icon" width="10" height="14">
                 <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button type="button" class="menu-btn-open" aria-expanded="false" data-menu-button>
-          <svg width="40" height="40" aria-label="переключатель мобільного меню">
-            <use href="./images/svg/symbol-defs.svg#icon-burger-open"></use>
-          </svg>
-        </button>
 
-        <div class="mob-menu">
-          <button type="button" class="menu-btn-close">
-            <svg class="button-burger__close" width="40" height="40">
-              <use href="./images/svg/symbol-defs.svg#icon-burger-close"></use>
-            </svg>
-          </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-btn-close" data-menu-close>
+                <svg class="button-burger__close" width="40" height="40">
+                  <use href="./images/svg/symbol-defs.svg#icon-burger-close"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="mob-menu__nav">
+                  <li class="mob-menu__item">
+                    <a href="./index.html" class="mob-menu__link current">Студія</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                  </li>
+                  <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакти</a></li>
+                </ul>
+              </nav>
+            </div>
+            <ul class="mob-menu__contacts">
+              <li>
+                <a href="tel:+380961111111" class="mob-menu__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu__mail--position">
+                <a href="mailto:info@devstudio.com" class="mob-menu__mail"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__soc">
+              <a href="" class="mob-menu__soc-item">Instagram</a>
+              <a href="" class="mob-menu__soc-item">Twitter</a>
+              <a href="" class="mob-menu__soc-item">Facebook</a>
+              <a href="" class="mob-menu__soc-item">LinkedIn</a>
+            </ul>
+          </div>
         </div>
-         <ul class="mob-menu__nav">
-            <li><a href="./index.html" class="mob-menu__link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
-            <li><a href="" class="mob-menu__link">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="mob-menu__contacts">
-          <li class="mob-menu__mail">
-            <a href="mailto:info@devstudio.com" class="mail__item">
-               info@devstudio.com</a
-            >
-          </li>
-          <li class="mob-menu__tel">
-            <a href="tel:+380961111111" class="tel__item">
-                +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-
       </div>
     </header>
 
@@ -154,15 +164,40 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="benefits">
             <li class="benefits__block">
-              <img src="./images/computer.jpg" alt="Оптимізація на комп" width="370" />
+              <picture>
+                <source srcset="
+                ./images/computer.jpg 1x,
+                ./images/computer-2x-min.jpg 2x" media="(min-width:1200px)">
+                 <img srcset="./images/computer.jpg 1x, ./images/computer-2x-min.jpg 2x"
+                 src="./images/computer.jpg" alt="Оптимізація на компютері" width="370"/>
+              </picture>
+              
               <p class="benefits__text">Десктопні додатки</p>
             </li>
             <li class="benefits__block">
-              <img src="./images/telephone.jpg" alt="Оптимізація на телефоні" width="370" />
+              <picture>
+                <source srcset="
+                ./images/./images/telephone.jpg 1x,
+                ./images/telephone-2x-min.jpg 2x" media="(min-width:1200px)">
+                 <img srcset="
+                 ./images/telephone.jpg 1x, 
+                 ./images/telephone-2x-min.jpg 2x"
+                 src="./images/telephone.jpg" alt="Оптимізація на телефоні" width="370"/>
+              </picture>
+              
               <p class="benefits__text">Мобільні додатки</p>
             </li>
             <li class="benefits__block">
-              <img src="./images/tablet.jpg" alt="Оптимізація на планшеті" width="370" />
+              <picture>
+                <source srcset="
+                ./images/./images/tablet.jpg 1x,
+                ./images/tablet-2x-min.jpg 2x" media="(min-width:1200px)">
+                 <img srcset="
+                 ./images/tablet.jpg 1x, 
+                 ./images/tablet-2x-min.jpg 2x"
+                 src="./images/tablet.jpg" alt="Оптимізація на планшеті" width="370"/>
+              </picture>
+              
               <p class="benefits__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -175,7 +210,16 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="card">
-              <img src="./images/igor.jpg" alt="Igor" width="270" />
+              <picture>
+                <source srcset="./images/igor-desk-1x-min.jpg 1x,
+                 ./images/igor-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/igor-tab-1x-min.jpg 1x,
+                 ./images/igor-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/igor-mob-1x-min.jpg 1x,
+                 ./images/igor-mob-2x-min.jpg 2x" media="(max-width:767px)">
+                <img srcset="./images/igor 1x, ./images/igor-mob-2x-min.jpg 2x"
+                 src="./images/igor.jpg" alt="Igor" width="450"/>
+              </picture>
               <div class="card__name">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -212,7 +256,23 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/olga.jpg" alt="Olga" width="270" />
+              <picture>
+                <source srcset="./images/olga-desk-1x-min.jpg 1x,
+                 ./images/olga-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/olga-tab-1x-min.jpg 1x,
+                 ./images/olga-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/olga-mob-1x-min.jpg 1x,
+                 ./images/olga-mob-2x-min.jpg 2x" media="(max-width:767px)">
+                
+                <img
+                  srcset="./images/olga-mob-1x-min.jpg 1x,
+                   ./images/olga-mob-2x-min.jpg 2x"
+                  
+                  alt="Olga"
+                  width="450"
+                />
+              </picture>
+
               <div class="card__name">
                 <h3 class="card__title">Ольга Рєпіна</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -249,7 +309,16 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/nikolay.jpg" alt="Nikolay" width="270" />
+              <picture>
+                <source srcset="./images/kolya-desk-1x-min.jpg 1x,
+                 ./images/kolya-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/kolya-tab-1x-min.jpg 1x,
+                 ./images/kolya-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/kolya-mob-1x-min.jpg 1x,
+                 ./images/kolya-mob-2x-min.jpg 2x" media="(max-width:767px)">
+                <img srcset="./images/kolya-mob-1x-min 1x, ./images/kolya-mob-2x-min.jpg 2x"
+                 src="./images/nikolay.jpg" alt="Nikolay" width="450"/>
+              </picture>
               <div class="card__name">
                 <h3 class="card__title">Микола Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -286,7 +355,24 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/misha.jpg" alt="Mikhail" width="270" />
+              <source srcset="
+                ./images/miha-desk-1x-min.jpg 1x,
+                ./images/miha-desk-2x-min.jpg 2x"
+                 media="(min-width:1200px)">
+                <source srcset="
+                ./images/miha-tab-1x-min.jpg 1x,
+                 ./images/miha-tab-2x-min.jpg 2x" 
+                 media="(min-width:768px)">
+                <source srcset="
+                ./images/miha-mob-1x-min.jpg 1x,
+                 ./images/miha-mob-2x-min.jpg 2x"
+                  media="(max-width:767px)">
+                <img srcset="
+                ./images/miha-mob-1x-min.jpg 1x, 
+                ./images/miha-mob-2x-min.jpg 2x"
+                 src="./images/misha.jpg" alt="miha" width="450"/>
+              </picture>
+              
               <div class="card__name">
                 <h3 class="card__title">Михайло Єрмаков</h3>
                 <p class="card__text">UI Designer</p>
@@ -525,6 +611,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

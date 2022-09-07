@@ -40,15 +40,16 @@
 
 &__frame {
   border: 1px solid #eeeeee;
-  width: 370px;
-
+  width: 450px;
+  
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
       }
     
       @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px) / 4);
+        width: calc((100% - 60px) / 3);
       }
+
   
 }
 

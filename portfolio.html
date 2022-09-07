@@ -30,6 +30,11 @@
           <a href="./index.html" class="logo header-logo--position">
             Web<span class="logo__text--black">Studio</span></a
           >
+          <button type="button" class="menu-btn-open" data-menu-open>
+            <svg width="40" height="40" aria-label="переключатель мобільного меню">
+              <use href="./images/svg/symbol-defs.svg#icon-burger-open"></use>
+            </svg>
+          </button>
           <ul class="nav">
             <li><a href="./index.html" class="nav__link">Студія</a></li>
             <li><a href="./portfolio.html" class="nav__link current">Портфоліо</a></li>
@@ -54,6 +59,42 @@
             >
           </li>
         </ul>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-btn-close" data-menu-close>
+                <svg class="button-burger__close" width="40" height="40">
+                  <use href="./images/svg/symbol-defs.svg#icon-burger-close"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="mob-menu__nav">
+                  <li class="mob-menu__item">
+                    <a href="./index.html" class="mob-menu__link current">Студія</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                  </li>
+                  <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакти</a></li>
+                </ul>
+              </nav>
+            </div>
+            <ul class="mob-menu__contacts">
+              <li>
+                <a href="tel:+380961111111" class="mob-menu__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu__mail--position">
+                <a href="mailto:info@devstudio.com" class="mob-menu__mail"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__soc">
+              <li class="mob-menu__soc-item">Instagram</li>
+              <li class="mob-menu__soc-item">Twitter</li>
+              <li class="mob-menu__soc-item">Facebook</li>
+              <li class="mob-menu__soc-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -74,7 +115,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-1.jpg" alt="вебсайт техно" width="370" />
+                  <picture>
+                      <source srcset="
+                    ./images/tehno-desk-1x-min.jpg 1x,
+                    ./images/tehno-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/tehno-tab-1x-min.jpg 1x,
+                    ./images/tehno-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/tehno-mob-1x-min.jpg 1x,
+                    ./images/tehno-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/tehno-mob-1x-min.jpg 1x, 
+                    ./images/tehno-mob-2x-min.jpg 2x"
+                    src="./images/tehno-mob-1x-min.jpg" alt="вебсайт техно" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -90,7 +149,26 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-2.jpg" alt="постер" width="370" />
+                  <div class="foto__thumb">
+                  <picture>
+                      <source srcset="
+                    ./images/poster-desk-1x-min.jpg 1x,
+                    ./images/poster-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/poster-tab-1x-min.jpg 1x,
+                    ./images/poster-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/poster-mob-1x-min.jpg 1x,
+                    ./images/poster-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/poster-mob-1x-min.jpg 1x, 
+                    ./images/poster-mob-2x-min.jpg 2x"
+                    src="./images/poster-mob-1x-min.jpg" alt="вебсайт постер" width="450" />
+                </picture>
+                 
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -106,7 +184,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-3.jpg" alt="ресторан" width="370" />
+                <picture>
+                    <source srcset="
+                  ./images/restoran-desk-1x-min.jpg 1x,
+                  ./images/restoran-desk-2x-min.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source srcset="
+                  ./images/restoran-tab-1x-min.jpg 1x,
+                  ./images/restoran-tab-2x-min.jpg 2x" 
+                  media="(min-width:768px)">
+                  <source srcset="
+                  ./images/restoran-mob-1x-min.jpg 1x,
+                  ./images/restoran-mob-2x-min.jpg 2x"
+                    media="(max-width:767px)">
+                  <img srcset="
+                  ./images/restoran-mob-1x-min.jpg 1x, 
+                  ./images/restoran-mob-2x-min.jpg 2x"
+                  src="./images/restoran-mob-1x-min.jpg" alt="вебсайт ресторан" width="450" />
+                </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -122,7 +218,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-4.jpg" alt="навушники" width="370" />
+                  <picture>
+                      <source srcset="
+                    ./images/project-desk-1x-min.jpg 1x,
+                    ./images/project-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/project-tab-1x-min.jpg 1x,
+                    ./images/project-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/project-mob-1x-min.jpg 1x,
+                    ./images/project-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/project-mob-1x-min.jpg 1x, 
+                    ./images/project-mob-2x-min.jpg 2x"
+                    src="./images/project-mob-1x-min.jpg" alt="вебсайт проєкт" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -138,7 +252,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-5.jpg" alt="кубики" width="370" />
+                  <picture>
+                      <source srcset="
+                    ./images/project-box-desk-1x-min.jpg 1x,
+                    ./images/project-box-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/project-box-tab-1x-min.jpg 1x,
+                    ./images/project-box-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/project-box-mob-1x-min.jpg 1x,
+                    ./images/project-box-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/project-box-mob-1x-min.jpg 1x, 
+                    ./images/project-box-mob-2x-min.jpg 2x"
+                    src="./images/project-box-mob-1x-min.jpg" alt="вебсайт проєкт-бокс" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -154,7 +286,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-6.jpg" alt="комп" width="370" />
+                <picture>
+                    <source srcset="
+                  ./images/inspiration-desk-1x-min.jpg 1x,
+                  ./images/inspiration-desk-2x-min.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source srcset="
+                  ./images/inspiration-tab-1x-min.jpg 1x,
+                  ./images/inspiration-tab-2x-min.jpg 2x" 
+                  media="(min-width:768px)">
+                  <source srcset="
+                  ./images/inspiration-mob-1x-min.jpg 1x,
+                  ./images/inspiration-mob-2x-min.jpg 2x"
+                    media="(max-width:767px)">
+                  <img srcset="
+                  ./images/inspiration-mob-1x-min.jpg 1x, 
+                  ./images/inspiration-mob-2x-min.jpg 2x"
+                  src="./images/inspiration-mob-1x-min.jpg" alt="вебсайт інспірейшн" width="450" />
+                </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -170,7 +320,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-7.jpg" alt="книга" width="370" />
+                  <picture>
+                      <source srcset="
+                    ./images/lim-desk-1x-min.jpg 1x,
+                    ./images/lim-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/lim-tab-1x-min.jpg 1x,
+                    ./images/lim-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/lim-mob-1x-min.jpg 1x,
+                    ./images/lim-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/lim-mob-1x-min.jpg 1x, 
+                    ./images/lim-mob-2x-min.jpg 2x"
+                    src="./images/lim-mob-1x-min.jpg" alt="вебсайт лім" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -186,7 +354,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-8.jpg" alt="бірка" width="370" />
+                  <picture>
+                    <source srcset="
+                    ./images/lab-desk-1x-min.jpg 1x,
+                    ./images/lab-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/lab-tab-1x-min.jpg 1x,
+                    ./images/lab-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/lab-mob-1x-min.jpg 1x,
+                    ./images/lab-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/lab-mob-1x-min.jpg 1x, 
+                    ./images/lab-mob-2x-min.jpg 2x"
+                    src="./images/lab-mob-1x-min.jpg" alt="вебсайт лаб" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -202,7 +388,25 @@
             <li class="foto__frame">
               <a class="foto__link" href="">
                 <div class="foto__thumb">
-                  <img src="./images/portfolio-img-9.jpg" alt="ноут" width="370" />
+                  <picture>
+                    <source srcset="
+                    ./images/grow-desk-1x-min.jpg 1x,
+                    ./images/grow-desk-2x-min.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="
+                    ./images/grow-tab-1x-min.jpg 1x,
+                    ./images/grow-tab-2x-min.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="
+                    ./images/grow-mob-1x-min.jpg 1x,
+                    ./images/grow-mob-2x-min.jpg 2x"
+                      media="(max-width:767px)">
+                    <img srcset="
+                    ./images/grow-mob-1x-min.jpg 1x, 
+                    ./images/grow-mob-2x-min.jpg 2x"
+                    src="./images/grow-mob-1x-min.jpg" alt="вебсайт гроу" width="450" />
+                  </picture>
+                  
                   <p class="foto__up">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -297,5 +501,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
